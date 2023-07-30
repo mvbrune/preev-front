@@ -15,7 +15,7 @@ function CopyrightSection() {
   return (
     <CopyrightSectionContainer>
       <Typography align="center" color="textSecondary">
-        © {new Date().getFullYear()} Your Website. All rights reserved.
+        © {new Date().getFullYear()} Marcus Brune. All rights reserved.
       </Typography>
     </CopyrightSectionContainer>
   );
