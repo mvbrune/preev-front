@@ -50,4 +50,8 @@
         justify-content: center;
         text-align: center;
     }
+
+    .custom-footer > .css-1ontqvh {
+        display: inline-block;
+    }
 }
