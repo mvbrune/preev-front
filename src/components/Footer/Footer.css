@@ -36,12 +36,18 @@
     }
 
     .custom-footer ul li {
-        text-align: center !important;
+        text-align: start !important;
     }
 
     .custom-footer a {
         text-decoration: none; 
         color: #fff; 
         display: block; 
+    }
+
+    .css-mhc70k-MuiGrid-root > .MuiGrid-item {
+        display: grid !important;
+        justify-content: center;
+        text-align: center;
     }
 }

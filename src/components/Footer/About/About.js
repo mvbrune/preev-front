@@ -27,14 +27,14 @@ function AboutSection() {
   const classes = useStyles();
 
   const description =
-    'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum' +
-    'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum' +
-    'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum';
+    'As a highly skilled and dynamic full-stack developer,' +
+    'I possess a wealth of expertise in crafting robust and ' +
+    'innovative solutions.';
 
   return (
     <div className={classes.aboutSectionContainer}>
       <Typography variant="h6" className={classes.title}>
-        About us
+        About me
       </Typography>
       <Typography variant="body1" style={{ paddingTop: '16px', }}>
         {description}

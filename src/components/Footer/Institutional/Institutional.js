@@ -1,9 +1,12 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
+import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import { styled } from '@mui/system';
+
+import EmailIcon from '@mui/icons-material/Email';
 
 const useStyles = styled((theme) => ({
   institutionalSectionContainer: {
@@ -45,20 +48,14 @@ function InstitutionalSection() {
   return (
     <div className={classes.institutionalSectionContainer}>
       <Typography variant="h6" noWrap className={classes.title}>
-        Governance
+        Contact
       </Typography>
       <List component="ul">
         <ListItem component="li" disableGutters className={classes.listItem}>
-          <ListItemText primary={<a href="/">Lorem Ipsum</a>} className={classes.listItemText} />
-        </ListItem>
-        <ListItem component="li" disableGutters className={classes.listItem}>
-          <ListItemText primary={<a href="/">Lorem Ipsum</a>} className={classes.listItemText} />
-        </ListItem>
-        <ListItem component="li" disableGutters className={classes.listItem}>
-          <ListItemText primary={<a href="/">Lorem Ipsum</a>} className={classes.listItemText} />
-        </ListItem>
-        <ListItem component="li" disableGutters className={classes.listItem}>
-          <ListItemText primary={<a href="/">Lorem Ipsum</a>} className={classes.listItemText} />
+          <ListItemIcon>
+            <EmailIcon />
+          </ListItemIcon>
+          <ListItemText primary={<a href="mailto:marcusssbrune@gmail.com">Email</a>} className={classes.listItemText} />
         </ListItem>
       </List>
     </div>

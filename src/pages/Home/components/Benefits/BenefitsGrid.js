@@ -1,50 +1,51 @@
 import React from 'react';
 import { Grid, Box } from '@mui/material';
 
-import SecurityIcon from '@mui/icons-material/Security';
-import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
-import FingerprintIcon from '@mui/icons-material/Fingerprint';
-import DraftsIcon from '@mui/icons-material/Drafts';
-import DonutSmallIcon from '@mui/icons-material/DonutSmall';
+import BackupTableIcon from '@mui/icons-material/BackupTable';
+import SettingsIcon from '@mui/icons-material/Settings';
+import MobileFriendlyIcon from '@mui/icons-material/MobileFriendly';
+import StorageIcon from '@mui/icons-material/Storage';
+import InsertChartIcon from '@mui/icons-material/InsertChart';
+import BugReportIcon from '@mui/icons-material/BugReport';
 
 import './BenefitsGrid.css'; 
 
 function BenefitsGrid() {
   const features = [
     {
-      icon:  <SecurityIcon />, 
-      title: 'Título 1',
-      description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum Lorem Ipsum',
+      icon:  <BackupTableIcon />, 
+      title: 'Front-end',
+      description: 'Building beautiful and complex layouts using the best technologies.',
     },
     {
-      icon: <AssignmentIndIcon />, 
-      title: 'Título 2',
-      description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum Lorem Ipsum',
+      icon: <SettingsIcon />, 
+      title: 'Back-end',
+      description: 'Developing web applications with scalable solutions and adhering to best practices.',
     },
     {
-      icon: <FingerprintIcon />, 
-      title: 'Título 3',
-      description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum Lorem Ipsum',
+      icon: <MobileFriendlyIcon />, 
+      title: 'Mobile',
+      description: 'Developing complex and intuitive mobile apps that provide seamless user experiences.',
     },
     {
-      icon: <DraftsIcon />, 
-      title: 'Título 4',
-      description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum Lorem Ipsum',
+      icon: <StorageIcon />, 
+      title: 'Deploy',
+      description: 'Providing app deployment services on cloud platforms.',
     },
     {
-      icon: <DonutSmallIcon />, 
-      title: 'Título 5',
-      description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum Lorem Ipsum',
+      icon: <InsertChartIcon />, 
+      title: 'Consultancy',
+      description: 'Providing expert evaluation and tailored solutions for your business.',
     },
     {
-      icon: <DonutSmallIcon />, 
-      title: 'Título 6',
-      description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum, Lorem Ipsum Lorem Ipsum Lorem Ipsum',
+      icon: <BugReportIcon />, 
+      title: 'solve problems',
+      description: 'Fix minor errors related to web technologies, such as PHP, JavaScript, and more...',
     }
   ];
 
   return (
-    <div className="benefits-grid-container" style={{ margin: '50px' }}>
+    <div style={{ margin: '50px' }}>
       <Grid container justifyContent="center" spacing={0}>
         {features.map((feature, index) => (
           <Grid key={index} item xs={12} sm={6} md={4} lg={3} 
@@ -61,7 +62,7 @@ function BenefitsGrid() {
              <Box p={3}> 
               <div className="benefit-item">
                 {feature.icon}
-                <h3>{feature.title}</h3>
+                <h3 style={{ textTransform: 'uppercase',  }}>{feature.title}</h3>
                 <p>{feature.description}</p>
               </div>
             </Box>
